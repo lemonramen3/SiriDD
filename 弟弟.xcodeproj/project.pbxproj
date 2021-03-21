@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB71D16F2605FB6E001540BE /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB71D16E2605FB6E001540BE /* Intents.framework */; };
+		DB71D1722605FB6E001540BE /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71D1712605FB6E001540BE /* IntentHandler.swift */; };
+		DB71D17A2605FB6E001540BE /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB71D1792605FB6E001540BE /* IntentsUI.framework */; };
+		DB71D17D2605FB6E001540BE /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71D17C2605FB6E001540BE /* IntentViewController.swift */; };
+		DB71D1802605FB6E001540BE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB71D17E2605FB6E001540BE /* MainInterface.storyboard */; };
+		DB71D1842605FB6E001540BE /* ShortCutIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DB71D1782605FB6E001540BE /* ShortCutIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DB71D1872605FB6E001540BE /* ShortCutIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DB71D16C2605FB6E001540BE /* ShortCutIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DB71D1932605FBC6001540BE /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DB71D1922605FBC6001540BE /* Intents.intentdefinition */; };
+		DB71D1942605FBC6001540BE /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DB71D1922605FBC6001540BE /* Intents.intentdefinition */; };
+		DB71D1952605FBC6001540BE /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DB71D1922605FBC6001540BE /* Intents.intentdefinition */; };
+		DB71D1AC260600BB001540BE /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71D1712605FB6E001540BE /* IntentHandler.swift */; };
+		DB71D1B0260600BC001540BE /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71D1712605FB6E001540BE /* IntentHandler.swift */; };
+		DB71D1B4260600CC001540BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D29B25FA0E7C00166CB2 /* ContentView.swift */; };
+		DB71D1B8260600CC001540BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D29B25FA0E7C00166CB2 /* ContentView.swift */; };
+		DB71D1BC260600CF001540BE /* __App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D29925FA0E7C00166CB2 /* __App.swift */; };
+		DB71D1C0260600D0001540BE /* __App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D29925FA0E7C00166CB2 /* __App.swift */; };
+		DB71D1C8260600D4001540BE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D2A925FA1AE600166CB2 /* Data.swift */; };
+		DB71D1C9260600D5001540BE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D2A925FA1AE600166CB2 /* Data.swift */; };
+		DB71D1E22607141A001540BE /* AskQuestionIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71D1E12607141A001540BE /* AskQuestionIntentHandler.swift */; };
+		DB71D1E32607141A001540BE /* AskQuestionIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71D1E12607141A001540BE /* AskQuestionIntentHandler.swift */; };
+		DB71D1E42607141A001540BE /* AskQuestionIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71D1E12607141A001540BE /* AskQuestionIntentHandler.swift */; };
 		DB99D29A25FA0E7C00166CB2 /* __App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D29925FA0E7C00166CB2 /* __App.swift */; };
 		DB99D29C25FA0E7C00166CB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D29B25FA0E7C00166CB2 /* ContentView.swift */; };
 		DB99D29E25FA0E7E00166CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB99D29D25FA0E7E00166CB2 /* Assets.xcassets */; };
@@ -14,7 +35,52 @@
 		DB99D2AA25FA1AE600166CB2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB99D2A925FA1AE600166CB2 /* Data.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DB71D1822605FB6E001540BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB99D28E25FA0E7C00166CB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB71D1772605FB6E001540BE;
+			remoteInfo = ShortCutIntentUI;
+		};
+		DB71D1852605FB6E001540BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB99D28E25FA0E7C00166CB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB71D16B2605FB6E001540BE;
+			remoteInfo = ShortCutIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB71D18E2605FB6E001540BE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DB71D1872605FB6E001540BE /* ShortCutIntent.appex in Embed App Extensions */,
+				DB71D1842605FB6E001540BE /* ShortCutIntentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DB71D1662605FAF8001540BE /* 弟弟.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "弟弟.entitlements"; sourceTree = "<group>"; };
+		DB71D16C2605FB6E001540BE /* ShortCutIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShortCutIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB71D16E2605FB6E001540BE /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		DB71D1712605FB6E001540BE /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		DB71D1732605FB6E001540BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB71D1782605FB6E001540BE /* ShortCutIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShortCutIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB71D1792605FB6E001540BE /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		DB71D17C2605FB6E001540BE /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		DB71D17F2605FB6E001540BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DB71D1812605FB6E001540BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB71D1922605FBC6001540BE /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		DB71D1992605FC9F001540BE /* ShortCutIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShortCutIntent.entitlements; sourceTree = "<group>"; };
+		DB71D1E12607141A001540BE /* AskQuestionIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionIntentHandler.swift; sourceTree = "<group>"; };
 		DB99D29625FA0E7C00166CB2 /* 弟弟.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "弟弟.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB99D29925FA0E7C00166CB2 /* __App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __App.swift; sourceTree = "<group>"; };
 		DB99D29B25FA0E7C00166CB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +91,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DB71D1692605FB6E001540BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB71D16F2605FB6E001540BE /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB71D1752605FB6E001540BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB71D17A2605FB6E001540BE /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB99D29325FA0E7C00166CB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +117,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB71D16D2605FB6E001540BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB71D16E2605FB6E001540BE /* Intents.framework */,
+				DB71D1792605FB6E001540BE /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB71D1702605FB6E001540BE /* ShortCutIntent */ = {
+			isa = PBXGroup;
+			children = (
+				DB71D1992605FC9F001540BE /* ShortCutIntent.entitlements */,
+				DB71D1712605FB6E001540BE /* IntentHandler.swift */,
+				DB71D1732605FB6E001540BE /* Info.plist */,
+				DB71D1E12607141A001540BE /* AskQuestionIntentHandler.swift */,
+			);
+			path = ShortCutIntent;
+			sourceTree = "<group>";
+		};
+		DB71D17B2605FB6E001540BE /* ShortCutIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				DB71D17C2605FB6E001540BE /* IntentViewController.swift */,
+				DB71D17E2605FB6E001540BE /* MainInterface.storyboard */,
+				DB71D1812605FB6E001540BE /* Info.plist */,
+			);
+			path = ShortCutIntentUI;
+			sourceTree = "<group>";
+		};
 		DB99D28D25FA0E7C00166CB2 = {
 			isa = PBXGroup;
 			children = (
 				DB99D29825FA0E7C00166CB2 /* 弟弟 */,
+				DB71D1702605FB6E001540BE /* ShortCutIntent */,
+				DB71D17B2605FB6E001540BE /* ShortCutIntentUI */,
+				DB71D16D2605FB6E001540BE /* Frameworks */,
 				DB99D29725FA0E7C00166CB2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				DB99D29625FA0E7C00166CB2 /* 弟弟.app */,
+				DB71D16C2605FB6E001540BE /* ShortCutIntent.appex */,
+				DB71D1782605FB6E001540BE /* ShortCutIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +171,8 @@
 		DB99D29825FA0E7C00166CB2 /* 弟弟 */ = {
 			isa = PBXGroup;
 			children = (
+				DB71D1662605FAF8001540BE /* 弟弟.entitlements */,
+				DB71D1922605FBC6001540BE /* Intents.intentdefinition */,
 				DB99D29925FA0E7C00166CB2 /* __App.swift */,
 				DB99D29B25FA0E7C00166CB2 /* ContentView.swift */,
 				DB99D2A925FA1AE600166CB2 /* Data.swift */,
@@ -75,6 +194,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DB71D16B2605FB6E001540BE /* ShortCutIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB71D18B2605FB6E001540BE /* Build configuration list for PBXNativeTarget "ShortCutIntent" */;
+			buildPhases = (
+				DB71D1682605FB6E001540BE /* Sources */,
+				DB71D1692605FB6E001540BE /* Frameworks */,
+				DB71D16A2605FB6E001540BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortCutIntent;
+			productName = ShortCutIntent;
+			productReference = DB71D16C2605FB6E001540BE /* ShortCutIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DB71D1772605FB6E001540BE /* ShortCutIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB71D1882605FB6E001540BE /* Build configuration list for PBXNativeTarget "ShortCutIntentUI" */;
+			buildPhases = (
+				DB71D1742605FB6E001540BE /* Sources */,
+				DB71D1752605FB6E001540BE /* Frameworks */,
+				DB71D1762605FB6E001540BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortCutIntentUI;
+			productName = ShortCutIntentUI;
+			productReference = DB71D1782605FB6E001540BE /* ShortCutIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DB99D29525FA0E7C00166CB2 /* 弟弟 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB99D2A525FA0E7E00166CB2 /* Build configuration list for PBXNativeTarget "弟弟" */;
@@ -82,10 +235,13 @@
 				DB99D29225FA0E7C00166CB2 /* Sources */,
 				DB99D29325FA0E7C00166CB2 /* Frameworks */,
 				DB99D29425FA0E7C00166CB2 /* Resources */,
+				DB71D18E2605FB6E001540BE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DB71D1832605FB6E001540BE /* PBXTargetDependency */,
+				DB71D1862605FB6E001540BE /* PBXTargetDependency */,
 			);
 			name = "弟弟";
 			productName = "弟弟";
@@ -101,6 +257,12 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					DB71D16B2605FB6E001540BE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					DB71D1772605FB6E001540BE = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					DB99D29525FA0E7C00166CB2 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -120,11 +282,28 @@
 			projectRoot = "";
 			targets = (
 				DB99D29525FA0E7C00166CB2 /* 弟弟 */,
+				DB71D16B2605FB6E001540BE /* ShortCutIntent */,
+				DB71D1772605FB6E001540BE /* ShortCutIntentUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DB71D16A2605FB6E001540BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB71D1762605FB6E001540BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB71D1802605FB6E001540BE /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB99D29425FA0E7C00166CB2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,19 +316,151 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DB71D1682605FB6E001540BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB71D1E32607141A001540BE /* AskQuestionIntentHandler.swift in Sources */,
+				DB71D1942605FBC6001540BE /* Intents.intentdefinition in Sources */,
+				DB71D1C8260600D4001540BE /* Data.swift in Sources */,
+				DB71D1BC260600CF001540BE /* __App.swift in Sources */,
+				DB71D1722605FB6E001540BE /* IntentHandler.swift in Sources */,
+				DB71D1B4260600CC001540BE /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB71D1742605FB6E001540BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB71D1C0260600D0001540BE /* __App.swift in Sources */,
+				DB71D1C9260600D5001540BE /* Data.swift in Sources */,
+				DB71D1952605FBC6001540BE /* Intents.intentdefinition in Sources */,
+				DB71D1B0260600BC001540BE /* IntentHandler.swift in Sources */,
+				DB71D1B8260600CC001540BE /* ContentView.swift in Sources */,
+				DB71D1E42607141A001540BE /* AskQuestionIntentHandler.swift in Sources */,
+				DB71D17D2605FB6E001540BE /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB99D29225FA0E7C00166CB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB71D1E22607141A001540BE /* AskQuestionIntentHandler.swift in Sources */,
 				DB99D29C25FA0E7C00166CB2 /* ContentView.swift in Sources */,
+				DB71D1AC260600BB001540BE /* IntentHandler.swift in Sources */,
 				DB99D2AA25FA1AE600166CB2 /* Data.swift in Sources */,
+				DB71D1932605FBC6001540BE /* Intents.intentdefinition in Sources */,
 				DB99D29A25FA0E7C00166CB2 /* __App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DB71D1832605FB6E001540BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB71D1772605FB6E001540BE /* ShortCutIntentUI */;
+			targetProxy = DB71D1822605FB6E001540BE /* PBXContainerItemProxy */;
+		};
+		DB71D1862605FB6E001540BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB71D16B2605FB6E001540BE /* ShortCutIntent */;
+			targetProxy = DB71D1852605FB6E001540BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB71D17E2605FB6E001540BE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB71D17F2605FB6E001540BE /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		DB71D1892605FB6E001540BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LA7MQSPPX7;
+				INFOPLIST_FILE = ShortCutIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example..--.ShortCutIntentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB71D18A2605FB6E001540BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LA7MQSPPX7;
+				INFOPLIST_FILE = ShortCutIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example..--.ShortCutIntentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB71D18C2605FB6E001540BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShortCutIntent/ShortCutIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LA7MQSPPX7;
+				INFOPLIST_FILE = ShortCutIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example..--.ShortCutIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB71D18D2605FB6E001540BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShortCutIntent/ShortCutIntent.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LA7MQSPPX7;
+				INFOPLIST_FILE = ShortCutIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example..--.ShortCutIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DB99D2A325FA0E7E00166CB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -269,8 +580,10 @@
 		DB99D2A625FA0E7E00166CB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "弟弟/弟弟.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"弟弟/Preview Content\"";
 				DEVELOPMENT_TEAM = LA7MQSPPX7;
@@ -291,8 +604,10 @@
 		DB99D2A725FA0E7E00166CB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "弟弟/弟弟.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"弟弟/Preview Content\"";
 				DEVELOPMENT_TEAM = LA7MQSPPX7;
@@ -313,6 +628,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB71D1882605FB6E001540BE /* Build configuration list for PBXNativeTarget "ShortCutIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB71D1892605FB6E001540BE /* Debug */,
+				DB71D18A2605FB6E001540BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB71D18B2605FB6E001540BE /* Build configuration list for PBXNativeTarget "ShortCutIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB71D18C2605FB6E001540BE /* Debug */,
+				DB71D18D2605FB6E001540BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DB99D29125FA0E7C00166CB2 /* Build configuration list for PBXProject "弟弟" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

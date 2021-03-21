@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Intents
 
 struct QAQuery: Codable {
     let token: String
@@ -25,7 +25,7 @@ struct Result: Codable {
 }
 var TOKEN = "b84fc35e83491ca74dc1afe651bc2530"
 var QA_APP = "qa"
-var CONTENT = "睡不着觉怎么办？"
+//var CONTENT = "睡不着觉怎么办？"
 
 
 struct ContentView: View {
@@ -33,10 +33,12 @@ struct ContentView: View {
     @State private var inputText: String = ""
     @State private var confirmationMessage = ""
     @State private var showingConfirmation = false
+//    @State private var resultText: String = ""
 //    let query = QAQuery(token: TOKEN, app: QA_APP, content: CONTENT)
 
     func askModel(query: QAQuery){
         print(inputText)
+        makeDonation(question: inputText)
         guard let url = URL(string: "https://lab.aminer.cn/isoa-2021/gpt") else {
             print("Invalid URL")
             return
@@ -73,9 +75,25 @@ struct ContentView: View {
         TextEditor(text: $inputText)
         Button("问问"){
             print("Hey")
-            let query = QAQuery(token: TOKEN, app: QA_APP, content: self.inputText)
+            let query = QAQuery(token: TOKEN, app: QA_APP, content: inputText)
             askModel(query: query)
         }
+    }
+    func makeDonation(question: String) {
+        let intent = AskQuestionIntent()
+        intent.question = question
+        intent.suggestedInvocationPhrase = "问问弟弟"
+        let interaction = INInteraction(intent: intent, response: nil)
+        interaction.donate { (error) in
+                    if error != nil {
+                        if let error = error as NSError? {
+                            print(
+                             "Donation failed: %@" + error.localizedDescription)
+                        }
+                    } else {
+                        print("Successfully donated interaction")
+                    }
+                }
     }
 }
 
