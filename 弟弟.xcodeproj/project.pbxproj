@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB5C8F22260D9E0700B90179 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71D17C2605FB6E001540BE /* IntentViewController.swift */; };
+		DB5C8F26260D9E0700B90179 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71D17C2605FB6E001540BE /* IntentViewController.swift */; };
 		DB71D16F2605FB6E001540BE /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB71D16E2605FB6E001540BE /* Intents.framework */; };
 		DB71D1722605FB6E001540BE /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71D1712605FB6E001540BE /* IntentHandler.swift */; };
 		DB71D17A2605FB6E001540BE /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB71D1792605FB6E001540BE /* IntentsUI.framework */; };
@@ -75,7 +77,7 @@
 		DB71D1732605FB6E001540BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB71D1782605FB6E001540BE /* ShortCutIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShortCutIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB71D1792605FB6E001540BE /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		DB71D17C2605FB6E001540BE /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		DB71D17C2605FB6E001540BE /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = IntentViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		DB71D17F2605FB6E001540BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		DB71D1812605FB6E001540BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB71D1922605FBC6001540BE /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 				DB71D1942605FBC6001540BE /* Intents.intentdefinition in Sources */,
 				DB71D1C8260600D4001540BE /* Data.swift in Sources */,
 				DB71D1BC260600CF001540BE /* __App.swift in Sources */,
+				DB5C8F26260D9E0700B90179 /* IntentViewController.swift in Sources */,
 				DB71D1722605FB6E001540BE /* IntentHandler.swift in Sources */,
 				DB71D1B4260600CC001540BE /* ContentView.swift in Sources */,
 			);
@@ -351,6 +354,7 @@
 				DB99D29C25FA0E7C00166CB2 /* ContentView.swift in Sources */,
 				DB71D1AC260600BB001540BE /* IntentHandler.swift in Sources */,
 				DB99D2AA25FA1AE600166CB2 /* Data.swift in Sources */,
+				DB5C8F22260D9E0700B90179 /* IntentViewController.swift in Sources */,
 				DB71D1932605FBC6001540BE /* Intents.intentdefinition in Sources */,
 				DB99D29A25FA0E7C00166CB2 /* __App.swift in Sources */,
 			);

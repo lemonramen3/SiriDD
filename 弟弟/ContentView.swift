@@ -9,14 +9,16 @@ import SwiftUI
 import Intents
 
 struct QAQuery: Codable {
-    let token: String
-    let app: String
-    let content: String
+//    let token: String
+//    let app: String
+//    let content: String
+    let que: String
 }
 
 struct Response: Codable {
-    let result: Result
-    let status: Bool
+//    let result: Result
+//    let status: Bool
+    let answer: String
 }
 struct Result: Codable {
     let bullet_id: String
@@ -25,7 +27,7 @@ struct Result: Codable {
 }
 var TOKEN = "b84fc35e83491ca74dc1afe651bc2530"
 var QA_APP = "qa"
-//var CONTENT = "睡不着觉怎么办？"
+var CONTENT = "睡不着觉怎么办？"
 
 
 struct ContentView: View {
@@ -35,11 +37,12 @@ struct ContentView: View {
     @State private var showingConfirmation = false
 //    @State private var resultText: String = ""
 //    let query = QAQuery(token: TOKEN, app: QA_APP, content: CONTENT)
+    
 
     func askModel(query: QAQuery){
         print(inputText)
         makeDonation(question: inputText)
-        guard let url = URL(string: "https://lab.aminer.cn/isoa-2021/gpt") else {
+        guard let url = URL(string: "http://103.242.175.116:8000/qa/") else {
             print("Invalid URL")
             return
         }
@@ -47,7 +50,7 @@ struct ContentView: View {
             print("Failed to encode query")
             return
         }
-        print(encoded)
+        print(String(data: encoded, encoding: .utf8))
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = encoded
@@ -57,9 +60,11 @@ struct ContentView: View {
                 print("No data in response: \(error?.localizedDescription ?? "Unknown error").")
                 return
             }
+            print(String(data: data, encoding: .utf8))
             if let decoded = try? JSONDecoder().decode(Response.self, from: data) {
                 print(decoded)
-                self.confirmationMessage = decoded.result.content
+                self.confirmationMessage = decoded.answer
+//                self.confirmationMessage = decoded.result.content
                 self.showingConfirmation = true
             } else {
                 print("Invalid response from server")
@@ -75,7 +80,8 @@ struct ContentView: View {
         TextEditor(text: $inputText)
         Button("问问"){
             print("Hey")
-            let query = QAQuery(token: TOKEN, app: QA_APP, content: inputText)
+            let query = QAQuery(que: inputText)
+//            let query = QAQuery(token: TOKEN, app: QA_APP, content: inputText)
             askModel(query: query)
         }
     }

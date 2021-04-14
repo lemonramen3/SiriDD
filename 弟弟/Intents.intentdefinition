@@ -9,7 +9,7 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>4uUzm0</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>20B29</string>
+	<string>20D91</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
 	<string>12D4e</string>
 	<key>INIntentDefinitionToolsVersion</key>
@@ -96,7 +96,7 @@
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
 							<key>INIntentParameterPromptDialogFormatString</key>
-							<string>你想问点啥？</string>
+							<string>弟弟说：你想问点啥？</string>
 							<key>INIntentParameterPromptDialogFormatStringID</key>
 							<string>eMyW3H</string>
 							<key>INIntentParameterPromptDialogType</key>
@@ -136,6 +136,10 @@
 				<key>INIntentResponseCodes</key>
 				<array>
 					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>回答为：${answer}</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>9oCQUR</string>
 						<key>INIntentResponseCodeFormatString</key>
 						<string>回答为：${answer}</string>
 						<key>INIntentResponseCodeFormatStringID</key>
@@ -155,7 +159,7 @@
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>2</integer>
+				<integer>4</integer>
 				<key>INIntentResponseParameters</key>
 				<array>
 					<dict>
@@ -168,7 +172,7 @@
 						<key>INIntentResponseParameterName</key>
 						<string>answer</string>
 						<key>INIntentResponseParameterTag</key>
-						<integer>2</integer>
+						<integer>4</integer>
 						<key>INIntentResponseParameterType</key>
 						<string>String</string>
 					</dict>

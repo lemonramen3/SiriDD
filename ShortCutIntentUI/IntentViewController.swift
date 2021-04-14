@@ -16,9 +16,13 @@ import IntentsUI
 
 class IntentViewController: UIViewController, INUIHostedViewControlling {
     
-    @IBOutlet weak var contentLabel: UILabel!
+//    @IBOutlet weak var answerTextField: UITextView!
+    @IBOutlet weak var answerTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view.
     }
         
@@ -32,8 +36,8 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
                 return
             }
         if let answer = response.answer {
-            self.contentLabel.text = answer
-
+            self.answerTextView.text = answer
+            
         }
         completion(true, parameters, self.desiredSize)
     }
